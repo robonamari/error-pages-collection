@@ -34,9 +34,20 @@
     <h1>518</h1>
     <p>I'm a teapot</p>
     <div class="buttons-con">
-      <div class="action-link-wrap"><a class="link-button link-back-button" onclick="history.back(-1)">Go Back</a> <a class="link-button" href="https://robonamari.com">Go to Home Page</a></div>
+      <div class="action-link-wrap"> <a class="link-button link-back-button" onclick="history.back(-1)">Go Back</a> <a class="link-button" href="#" onclick="goToPreviousRoot()">Go to Home Page</a> </div>
     </div>
   </div>
 </body>
+<script>
+  function goToPreviousRoot() {
+      let referrer = document.referrer;
+      if (referrer) {
+          let url = new URL(referrer);
+          location.href = url.origin;
+      } else {
+          history.back();
+      }
+  }
+</script>
 
 </html>
