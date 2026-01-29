@@ -25,14 +25,14 @@
       font-family: Shabnam;
       background-color: #2f3242;
       margin: 0;
-      padding: 0;
+      padding: 0
     }
 
     svg {
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%)
     }
 
     .message-box {
@@ -45,17 +45,17 @@
       margin-left: -190px;
       color: #fff;
       font-weight: 300;
-      text-align: center;
+      text-align: center
     }
 
     .message-box h1 {
       font-size: 60px;
       line-height: 46px;
-      margin-bottom: 40px;
+      margin-bottom: 40px
     }
 
     .buttons-con .action-link-wrap {
-      margin-top: 40px;
+      margin-top: 40px
     }
 
     .buttons-con .action-link-wrap a {
@@ -68,12 +68,12 @@
       text-decoration: none;
       transition: all 0.3s linear;
       cursor: pointer;
-      margin-right: 10px;
+      margin-right: 10px
     }
 
     .buttons-con .action-link-wrap a:hover {
       background: #5a5c6c;
-      color: #fff;
+      color: #fff
     }
 
     #Polygon-1,
@@ -82,62 +82,62 @@
     #Polygon-4,
     #Polygon-5 {
       -webkit-animation: float 1s infinite ease-in-out alternate;
-      animation: float 1s infinite ease-in-out alternate;
+      animation: float 1s infinite ease-in-out alternate
     }
 
     #Polygon-2 {
       -webkit-animation-delay: 0.2s;
-      animation-delay: 0.2s;
+      animation-delay: 0.2s
     }
 
     #Polygon-3 {
       -webkit-animation-delay: 0.4s;
-      animation-delay: 0.4s;
+      animation-delay: 0.4s
     }
 
     #Polygon-4 {
       -webkit-animation-delay: 0.6s;
-      animation-delay: 0.6s;
+      animation-delay: 0.6s
     }
 
     #Polygon-5 {
       -webkit-animation-delay: 0.8s;
-      animation-delay: 0.8s;
+      animation-delay: 0.8s
     }
 
     @-webkit-keyframes float {
       100% {
         -webkit-transform: translateY(20px);
-        transform: translateY(20px);
+        transform: translateY(20px)
       }
     }
 
     @keyframes float {
       100% {
         -webkit-transform: translateY(20px);
-        transform: translateY(20px);
+        transform: translateY(20px)
       }
     }
 
     @media (max-width: 450px) {
       .message-box {
         width: 280px;
-        margin-left: -140px;
+        margin-left: -140px
       }
 
       .message-box h1 {
-        font-size: 40px;
+        font-size: 40px
       }
 
       .buttons-con .action-link-wrap a {
         padding: 8px 18px;
-        font-size: 12px;
+        font-size: 12px
       }
 
       svg {
         width: 300px;
         height: auto;
-        margin-top: 20px;
+        margin-top: 20px
       }
     }
   </style>
@@ -170,9 +170,9 @@
       let referrer = document.referrer;
       if (referrer) {
         let url = new URL(referrer);
-        location.href = url.origin;
+        location.href = url.origin
       } else {
-        history.back();
+        history.back()
       }
     }
   </script>
