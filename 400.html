@@ -27,7 +27,7 @@
     }
 
     body {
-      font-family: Shabnam, sans-serif;
+      font-family: Shabnam;
       background-color: #2f3242;
       color: #fff;
       margin: 0;
@@ -171,11 +171,11 @@
   </main>
   <script defer>
     function goToPreviousRoot() {
-      let referrer = document.referrer;
-      if (referrer) {
-        let url = new URL(referrer);
-        location.href = url.origin
-      } else {
+      try {
+        const ref = document.referrer
+        location.href = ref ? new URL(ref).origin : ''
+        if (!ref) history.back()
+      } catch {
         history.back()
       }
     }
